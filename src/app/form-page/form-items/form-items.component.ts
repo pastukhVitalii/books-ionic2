@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {FormItemType} from "../form/form.component";
+import {FormItemType} from "../../models/book";
 
 @Component({
   selector: 'app-form-items',
@@ -8,10 +8,12 @@ import {FormItemType} from "../form/form.component";
 })
 
 export class FormItemsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {}
-
   @Input() formItems: Array<FormItemType>;
+
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
+
 }

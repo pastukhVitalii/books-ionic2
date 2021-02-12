@@ -6,3 +6,10 @@ export class Book {
   Publisher: string
   Year: string
 }
+
+
+export class FormItemType {
+  id: number
+  title: string
+  value: string
+}

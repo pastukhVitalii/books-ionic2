@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{label}}
+    </ion-title>
+    <app-button slot="end" [btnTitle]="btnTitle" (click)="addBook()"></app-button>
+  </ion-toolbar>
+</ion-header>
+<div>
+  <app-form-items [formItems]='formItems'></app-form-items>
+</div>

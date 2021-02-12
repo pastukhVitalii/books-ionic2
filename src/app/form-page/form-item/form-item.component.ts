@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {FormItemType} from "../form/form.component";
+import {FormItemType} from "../../models/book";
 
 @Component({
   selector: 'app-form-item',
@@ -8,10 +8,12 @@ import {FormItemType} from "../form/form.component";
 })
 
 export class FormItemComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {}
   @Input() formItemName: string;
   @Input() item: FormItemType;
+
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
 }
