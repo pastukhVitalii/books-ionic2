@@ -1,0 +1,10 @@
+<ion-header >
+  <ion-toolbar class="ion-justify-content-between" id="header_">
+    <ion-title>
+      {{label}}
+    </ion-title>
+    <app-button slot="end" [btnTitle]="btnTitle1" (childProperty)="showChildMessage($event)"></app-button><!--(childProperty)="showChildMessage($event)"-->
+  </ion-toolbar>
+</ion-header>
+<bold>{{messageFromChild}}</bold>
+

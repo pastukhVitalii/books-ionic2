@@ -1,0 +1,14 @@
+<div *ngFor="let book of books; index as i">
+  <ion-list-header>
+    <ion-label>{{book.ISBN}}</ion-label>
+    <ion-label>{{book.Author}}</ion-label>
+    <ion-label>{{book.Book}}</ion-label>
+    <ion-label>{{book.Publisher}}</ion-label>
+    <ion-label>{{book.Year}}</ion-label>
+    <ion-button fill="solid" color="primary" >{{btnTitle}}</ion-button>
+  </ion-list-header>
+<!--  <h1>{{heading}}</h1>-->
+<!--  <input class="add-new-item-form&#45;&#45;input-field" type="text" [(ngModel)]="title">-->
+ <!-- <button (click)="sendMessage()">dddd</button>
+  <p>{{title}}</p>-->
+</div>
