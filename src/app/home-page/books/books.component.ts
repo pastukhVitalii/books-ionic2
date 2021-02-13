@@ -16,6 +16,7 @@ export class BooksComponent implements OnInit {
   onClick(id: number) {
     this.getBookIdEmitter.emit(id)
   }
+
   constructor() {
   }
 

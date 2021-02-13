@@ -3,6 +3,7 @@ import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {FormComponent} from "./form-page/form/form.component";
 import {HomeComponent} from "./home-page/home/home.component";
 import {Book} from "./models/book";
+import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 
 const books: Array<Book> = [
   {
@@ -40,9 +41,22 @@ const routes: Routes = [
     data: {books: books},
   },
   {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
     path: 'book',
     component: FormComponent,
     data: {books: books},
+  },
+  {
+    path: '404',
+    component: PageNotFoundComponent
+  },
+  {
+    path: '**',
+    redirectTo: '404'
   },
 ];
 

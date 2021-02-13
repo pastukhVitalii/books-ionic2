@@ -30,6 +30,7 @@ export class FormComponent implements OnInit {
   ngOnInit() {
     this.route.data.subscribe(
       (data: any) => {
+        debugger
         this.books = data.books;
       }
     );

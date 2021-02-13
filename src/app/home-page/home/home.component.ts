@@ -11,7 +11,7 @@ import {ActivatedRoute} from "@angular/router";
 export class HomeComponent implements OnInit {
 
   label = 'Library';
-  btnTitle = 'home';
+  btnTitle = 'add book';
 
   constructor(private route: ActivatedRoute) {
   }
@@ -21,12 +21,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.route.data.subscribe(
       (books: any) => {
+        debugger
         this.books = books.books;
       }
     );
   }
 
   deleteBook(id: number) {
-    this.books = this.books.filter(b => b.id !== id)
+    this.books = this.books.filter(b => b.id !== id);
   }
 }
